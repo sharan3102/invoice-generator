@@ -7,9 +7,9 @@ import { schema } from './schema';
 function App() {
   const generatePDF = async (formData) => {
     // Load base PDF & Signed Seal dynamically
-    const basePdfResponse = await fetch(`src/assets/${formData.companyName}EmptyInvoice.pdf`);
+    const basePdfResponse = await fetch(`https://raw.githubusercontent.com/sharan3102/invoice-generator/main/src/assets/${formData.companyName}EmptyInvoice.pdf`);
     const basePdfData = await basePdfResponse.arrayBuffer();
-    const signedSealResponse = await fetch(`src/assets/${formData.companyName}signedSeal.png`);
+    const signedSealResponse = await fetch(`https://raw.githubusercontent.com/sharan3102/invoice-generator/main/src/assets/${formData.companyName}signedSeal.png`);
     const signedSealData = await signedSealResponse.arrayBuffer();
 
     // Chunk size to avoid Maximum call stack size exceeded error 
