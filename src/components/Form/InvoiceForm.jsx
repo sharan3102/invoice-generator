@@ -4,31 +4,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const InvoiceForm = ({ generatePDF }) => {
   const [formData, setFormData] = useState({
     companyName: '',
-    billNo: '0',
-    date: '0',
-    vehicleNo: '0',
-    typeOfVehicle: '0',
-    driverName: '0',
-    closingKm: '0',
-    startingKm: '0',
-    totalKm: '0',
-    closingTime: '0',
-    startingTime: '0',
-    totalHoursUsed: '0',
-    particularsOfDuty: '0',
-    arrangedBy: '0',
-    reportedTo: '0',
-    hireCharges: '0',
-    fuelChargesPerKm: '0',
-    excessPerKm: '0',
-    parkingCharges: '0',
-    driversBatta: '0',
-    permitCharges: '0',
-    nightHaltCharges: '0',
-    totalCharges: '0',
-    lessAdvance: '0',
-    balance: '0',
-    moneyInRupees: '0',
+    billNo: '',
+    date: '',
+    vehicleNo: '',
+    typeOfVehicle: '',
+    driverName: '',
+    closingKm: '',
+    startingKm: '',
+    totalKm: '',
+    closingTime: '',
+    startingTime: '',
+    totalHoursUsed: '',
+    particularsOfDuty: '',
+    arrangedBy: '',
+    reportedTo: '',
+    hireCharges: '',
+    fuelChargesPerKm: '',
+    excessPerKm: '',
+    parkingCharges: '',
+    driversBatta: '',
+    permitCharges: '',
+    nightHaltCharges: '',
+    totalCharges: '',
+    lessAdvance: '',
+    balance: '',
+    moneyInRupees: '',
   });
 
   const handleInputChange = (e) => {
@@ -51,8 +51,8 @@ const InvoiceForm = ({ generatePDF }) => {
           <label htmlFor="companyName">Company Name:</label>
           <select className="form-control" id="companyName" name="companyName" required value={formData.companyName} onChange={handleInputChange}>
             <option value="">Select Company Name</option>
-            <option value="Kumar Travels">Kumar Travels</option>
-            <option value="Viveka Travels">Viveka Travels</option>
+            <option value="KT">Kumar Travels</option>
+            <option value="VT">Viveka Travels</option>
           </select>
         </div>
 

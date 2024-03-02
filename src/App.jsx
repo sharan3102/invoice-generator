@@ -1,14 +1,19 @@
 import React from 'react';
-import { text, image, barcodes } from "@pdfme/schemas";
+import { text, image } from "@pdfme/schemas";
 import { generate } from "@pdfme/generator";
-import InvoiceForm from './components/Form/InvoiceForm'
+import InvoiceForm from './components/Form/InvoiceForm';
+import { schema } from './schema';
 
 function App() {
   const generatePDF = async (formData) => {
-    // Load base PDF dynamically
-    const basePdfResponse = await fetch('src/assets/EmptyInvoiceFinal.pdf');
+    // Load base PDF & Signed Seal dynamically
+    const basePdfResponse = await fetch(`src/assets/${formData.companyName}EmptyInvoice.pdf`);
     const basePdfData = await basePdfResponse.arrayBuffer();
-    const CHUNK_SIZE = 0xFFFF; // Chunk size to avoid Maximum call stack size exceeded error
+    const signedSealResponse = await fetch(`src/assets/${formData.companyName}signedSeal.png`);
+    const signedSealData = await signedSealResponse.arrayBuffer();
+
+    // Chunk size to avoid Maximum call stack size exceeded error 
+    const CHUNK_SIZE = 0xFFFF; 
 
     function arrayBufferToBase64(buffer) {
       let binary = '';
@@ -22,31 +27,18 @@ function App() {
       return btoa(binary);
     }
 
-const basePdfBase64 = arrayBufferToBase64(basePdfData);
-
+    const basePdfBase64 = arrayBufferToBase64(basePdfData);
+    const signedSealBase64 = arrayBufferToBase64(signedSealData);
+    formData.seal = `data:image/png;base64,${signedSealBase64}`;
 
     // Template definition
     const template = {
-      schemas: [
-        {
-          date: {
-            "type": "text",
-            "position": {
-              "x": 119,
-              "y": 216
-            },
-            "width": 40,
-            "height": 16,
-            "fontSize": 10,
-            "fontColor": "#000E8A"
-          }
-        },
-      ],
+      schemas: schema,
       basePdf: `data:application/pdf;base64,${basePdfBase64}`,
     };
 
     // Plugins
-    const plugins = { text, image, qrcode: barcodes.qrcode };
+    const plugins = { text, image };
 
     // Inputs
     const inputs = [formData];
@@ -56,7 +48,7 @@ const basePdfBase64 = arrayBufferToBase64(basePdfData);
 
     // Download the PDF
     const blob = new Blob([pdf.buffer], { type: 'application/pdf' });
-    const fileName = 'invoice.pdf';
+    const fileName = `${formData.billNo}.pdf`;
 
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
