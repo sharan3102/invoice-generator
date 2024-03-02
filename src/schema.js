@@ -94,21 +94,21 @@ export const schema =
     "moneyInRupees": {
       "type": "text",
       "position": {
-        "x": 86.88,
-        "y": 228.63
+        "x": 124.93,
+        "y": 221.9
       },
-      "width": 107.44,
-      "height": 12.65,
-      "rotate": 0,
-      "alignment": "right",
+      "width": 67.45,
+      "height": 16.17,
+      "fontSize": 12,
+      "fontName": "Roboto",
+      "alignment": "left",
       "verticalAlignment": "top",
-      "fontSize": 10,
-      "lineHeight": 1,
+      "lineHeight": 1.8,
+      "rotate": 0,
       "characterSpacing": 0,
       "fontColor": "#000E8A",
       "backgroundColor": "",
       "opacity": 1,
-      "fontName": "Roboto"
     },
     "balance": {
       "type": "text",
@@ -151,16 +151,16 @@ export const schema =
     "totalCharges": {
       "type": "text",
       "position": {
-        "x": 124.47,
-        "y": 222.36
+        "x": 152.76,
+        "y": 195.48
       },
-      "width": 67,
-      "height": 17.28,
+      "width": 45,
+      "height": 6,
       "rotate": 0,
-      "alignment": "left",
-      "verticalAlignment": "top",
+      "alignment": "center",
+      "verticalAlignment": "middle",
       "fontSize": 10,
-      "lineHeight": 1.8,
+      "lineHeight": 1,
       "characterSpacing": 0,
       "fontColor": "#000E8A",
       "backgroundColor": "",
