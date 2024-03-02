@@ -151,16 +151,16 @@ export const schema =
     "totalCharges": {
       "type": "text",
       "position": {
-        "x": 152.76,
-        "y": 195.48
+        "x": 124.47,
+        "y": 222.36
       },
-      "width": 45,
-      "height": 6,
+      "width": 67,
+      "height": 17.28,
       "rotate": 0,
-      "alignment": "center",
-      "verticalAlignment": "middle",
+      "alignment": "left",
+      "verticalAlignment": "top",
       "fontSize": 10,
-      "lineHeight": 1,
+      "lineHeight": 1.8,
       "characterSpacing": 0,
       "fontColor": "#000E8A",
       "backgroundColor": "",
