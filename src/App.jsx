@@ -11,6 +11,8 @@ function App() {
     const basePdfData = await basePdfResponse.arrayBuffer();
     const signedSealResponse = await fetch(`https://raw.githubusercontent.com/sharan3102/invoice-generator/main/src/assets/${formData.companyName}signedSeal.png`);
     const signedSealData = await signedSealResponse.arrayBuffer();
+    const signResponse = await fetch(`https://raw.githubusercontent.com/sharan3102/invoice-generator/main/src/assets/KTsign.png`);
+    const signData = await signResponse.arrayBuffer();
 
     // Chunk size to avoid Maximum call stack size exceeded error 
     const CHUNK_SIZE = 0xFFFF; 
@@ -29,7 +31,32 @@ function App() {
 
     const basePdfBase64 = arrayBufferToBase64(basePdfData);
     const signedSealBase64 = arrayBufferToBase64(signedSealData);
+    const signBase64 = arrayBufferToBase64(signData);
+
+    formData.hireChargesSplitUp = formData.hireCharges.split('-')[0];
+    formData.hireCharges = formData.hireCharges.split('-')[1];
+
+    formData.fuelChargesPerKmSplitUp = formData.fuelChargesPerKm.split('-')[0];
+    formData.fuelChargesPerKm = formData.fuelChargesPerKm.split('-')[1];
+
+    formData.excessPerKmSplitUp = formData.excessPerKm.split('-')[0];
+    formData.excessPerKm = formData.excessPerKm.split('-')[1];
+
+    formData.parkingChargesSplitUp = formData.parkingCharges.split('-')[0];
+    formData.parkingCharges = formData.parkingCharges.split('-')[1];
+
+    formData.driversBattaSplitUp = formData.driversBatta.split('-')[0];
+    formData.driversBatta = formData.driversBatta.split('-')[1];
+
+    formData.permitChargesSplitUp = formData.permitCharges.split('-')[0];
+    formData.permitCharges = formData.permitCharges.split('-')[1];
+
+    formData.nightHaltChargesSplitUp = formData.nightHaltCharges.split('-')[0];
+    formData.nightHaltCharges = formData.nightHaltCharges.split('-')[1];
+
+
     formData.seal = `data:image/png;base64,${signedSealBase64}`;
+    formData.sign = `data:image/png;base64,${signBase64}`;
 
     // Template definition
     const template = {
