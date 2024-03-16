@@ -14,7 +14,7 @@ export const schema =
       "verticalAlignment": "middle",
       "fontColor": "#000E8A"
     },
-    "date": {
+    "formattedDate": {
       "type": "text",
       "position": {
         "x": 42.98,

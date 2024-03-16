@@ -29,6 +29,12 @@ function App() {
       return btoa(binary);
     }
 
+    function formatDate(inputDate){
+      let parts = inputDate.split('-');
+      let formattedDate = parts[2] + '-' + parts[1] + '-' + parts[0];
+      return formattedDate;
+    }
+
     const basePdfBase64 = arrayBufferToBase64(basePdfData);
     const signedSealBase64 = arrayBufferToBase64(signedSealData);
     const signBase64 = arrayBufferToBase64(signData);
@@ -55,6 +61,7 @@ function App() {
     formData.nightHaltCharges = formData.nightHaltCharges.split('-')[1];
 
 
+    formData.formattedDate = formatDate(formData.date) 
     formData.seal = `data:image/png;base64,${signedSealBase64}`;
     formData.sign = `data:image/png;base64,${signBase64}`;
 
@@ -83,6 +90,7 @@ function App() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    location.reload();
   };
 
   return (
