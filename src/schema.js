@@ -124,7 +124,7 @@ export const schema =
       "fontSize": 11,
       "lineHeight": 1,
       "characterSpacing": 0,
-      "fontColor": "#000000",
+      "fontColor": "#000E8A",
       "backgroundColor": "",
       "opacity": 1,
       "fontName": "Roboto"
@@ -143,7 +143,7 @@ export const schema =
       "fontSize": 11,
       "lineHeight": 1,
       "characterSpacing": 0,
-      "fontColor": "#000000",
+      "fontColor": "#000E8A",
       "backgroundColor": "",
       "opacity": 1,
       "fontName": "Roboto"
