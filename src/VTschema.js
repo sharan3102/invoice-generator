@@ -576,14 +576,14 @@ export const VTschema =
         "type": "text",
         "position": {
           "x": 124.41,
-          "y": 226.12
+          "y": 225.65
         },
         "width": 67.45,
-        "height": 16.7,
+        "height": 17.49,
         "rotate": 0,
         "alignment": "left",
         "verticalAlignment": "top",
-        "fontSize": 12,
+        "fontSize": 11,
         "lineHeight": 1.8,
         "characterSpacing": 0,
         "fontColor": "#000E8A",
