@@ -33,6 +33,7 @@ const InvoiceForm = ({ generatePDF }) => {
     permitChargesSplitUp: '',
     nightHaltChargesSplitUp: '',
     totalCharges: '',
+    GSTIN: '',
     lessAdvance: '',
     balance: '',
     moneyInRupees: '',
@@ -225,6 +226,12 @@ const InvoiceForm = ({ generatePDF }) => {
         <div className="form-group">
           <label htmlFor="totalCharges">Total Charges:</label>
           <input type="text" className="form-control" id="totalCharges" name="totalCharges" value={formData.totalCharges} onChange={handleInputChange} required />
+        </div>
+
+        {/* GST */}
+        <div className="form-group">
+          <label htmlFor="GSTIN">GST (5%):</label>
+          <input type="text" className="form-control" id="GSTIN" name="GSTIN" value={formData.GSTIN} onChange={handleInputChange} required />
         </div>
 
         {/* Less Advance */}

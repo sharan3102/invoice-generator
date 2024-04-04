@@ -2,7 +2,8 @@ import React from 'react';
 import { text, image } from "@pdfme/schemas";
 import { generate } from "@pdfme/generator";
 import InvoiceForm from './components/Form/InvoiceForm';
-import { schema } from './schema';
+import { KTschema } from './KTschema';
+import { VTschema } from './VTschema';
 
 function App() {
   const generatePDF = async (formData) => {
@@ -67,7 +68,7 @@ function App() {
 
     // Template definition
     const template = {
-      schemas: schema,
+      schemas: formData.companyName === 'KT' ? KTschema : VTschema,
       basePdf: `data:application/pdf;base64,${basePdfBase64}`,
     };
 

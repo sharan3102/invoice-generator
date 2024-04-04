@@ -1,4 +1,4 @@
-export const schema =
+export const VTschema =
 [
   {
     "billNo": {
@@ -91,25 +91,7 @@ export const schema =
       "opacity": 1,
       "fontName": "Roboto"
     },
-    "moneyInRupees": {
-      "type": "text",
-      "position": {
-        "x": 124.93,
-        "y": 221.9
-      },
-      "width": 67.45,
-      "height": 16.17,
-      "fontSize": 12,
-      "fontName": "Roboto",
-      "alignment": "left",
-      "verticalAlignment": "top",
-      "lineHeight": 1.8,
-      "rotate": 0,
-      "characterSpacing": 0,
-      "fontColor": "#000E8A",
-      "backgroundColor": "",
-      "opacity": 1,
-    },
+    
     "reportedTo": {
       "type": "text",
       "position": {
@@ -124,7 +106,7 @@ export const schema =
       "fontSize": 11,
       "lineHeight": 1,
       "characterSpacing": 0,
-      "fontColor": "#000E8A",
+      "fontColor": "#000000",
       "backgroundColor": "",
       "opacity": 1,
       "fontName": "Roboto"
@@ -143,7 +125,7 @@ export const schema =
       "fontSize": 11,
       "lineHeight": 1,
       "characterSpacing": 0,
-      "fontColor": "#000E8A",
+      "fontColor": "#000000",
       "backgroundColor": "",
       "opacity": 1,
       "fontName": "Roboto"
@@ -279,36 +261,7 @@ export const schema =
       "alignment": "right",
       "verticalAlignment": "bottom"
     },
-    "seal": {
-      "type": "image",
-      "position": {
-        "x": 102.13,
-        "y": 256.55
-      },
-      "width": 22.8,
-      "height": 16.72,
-      "rotate": 0,
-      "opacity": 1
-    },
-    "balance": {
-      "type": "text",
-      "position": {
-        "x": 167.97,
-        "y": 211.47
-      },
-      "width": 27.44,
-      "height": 4,
-      "rotate": 0,
-      "alignment": "right",
-      "verticalAlignment": "bottom",
-      "fontSize": 10,
-      "lineHeight": 1,
-      "characterSpacing": 0,
-      "fontColor": "#000E8A",
-      "backgroundColor": "",
-      "opacity": 1,
-      "fontName": "Roboto"
-    },
+    
     "fuelChargesPerKmSplitUp": {
       "type": "text",
       "position": {
@@ -328,25 +281,7 @@ export const schema =
       "opacity": 1,
       "fontName": "Roboto"
     },
-    "lessAdvance": {
-      "type": "text",
-      "position": {
-        "x": 166.65,
-        "y": 204.17
-      },
-      "width": 29.03,
-      "height": 4,
-      "rotate": 0,
-      "alignment": "right",
-      "verticalAlignment": "bottom",
-      "fontSize": 10,
-      "lineHeight": 1,
-      "characterSpacing": 0,
-      "fontColor": "#000E8A",
-      "backgroundColor": "",
-      "opacity": 1,
-      "fontName": "Roboto"
-    },
+    
     "parkingCharges": {
       "type": "text",
       "position": {
@@ -404,25 +339,7 @@ export const schema =
       "opacity": 1,
       "fontName": "Roboto"
     },
-    "totalCharges": {
-      "type": "text",
-      "position": {
-        "x": 166.95,
-        "y": 197.3
-      },
-      "width": 28.5,
-      "height": 4,
-      "rotate": 0,
-      "alignment": "right",
-      "verticalAlignment": "bottom",
-      "fontSize": 10,
-      "lineHeight": 1,
-      "characterSpacing": 0,
-      "fontColor": "#000E8A",
-      "backgroundColor": "",
-      "opacity": 1,
-      "fontName": "Roboto"
-    },
+    
     "nightHaltCharges": {
       "type": "text",
       "position": {
@@ -594,16 +511,108 @@ export const schema =
       "opacity": 1,
       "fontName": "Roboto"
     },
-    "sign": {
-      "type": "image",
-      "position": {
-        "x": 151.87,
-        "y": 257.8
+    "totalCharges": {
+        "type": "text",
+        "position": {
+          "x": 167.33,
+          "y": 195.22
+        },
+        "width": 20.39,
+        "height": 4,
+        "fontSize": 10,
+        "fontName": "Roboto",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontColor": "#000E8A"
       },
-      "width": 16.72,
-      "height": 13.28,
-      "rotate": 0,
-      "opacity": 1
-    }
+      "lessAdvance": {
+        "type": "text",
+        "position": {
+          "x": 166.97,
+          "y": 208.78
+        },
+        "width": 20.91,
+        "height": 4,
+        "fontSize": 10,
+        "fontName": "Roboto",
+        "alignment": "right",
+        "verticalAlignment": "bottom",
+        "fontColor": "#000E8A"
+      },
+      "balance": {
+        "type": "text",
+        "position": {
+          "x": 167,
+          "y": 216.28
+        },
+        "width": 20.39,
+        "height": 4,
+        "fontSize": 10,
+        "fontName": "Roboto",
+        "alignment": "right",
+        "verticalAlignment": "bottom",
+        "fontColor": "#000E8A"
+      },
+      "GSTIN": {
+        "type": "text",
+        "position": {
+          "x": 167.21,
+          "y": 201.97
+        },
+        "width": 20.39,
+        "height": 4,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "bottom",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000E8A",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "Roboto"
+      },
+      "moneyInRupees": {
+        "type": "text",
+        "position": {
+          "x": 124.41,
+          "y": 226.12
+        },
+        "width": 67.45,
+        "height": 16.7,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 12,
+        "lineHeight": 1.8,
+        "characterSpacing": 0,
+        "fontColor": "#000E8A",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "Roboto"
+      },
+      "sign": {
+        "type": "image",
+        "position": {
+          "x": 157.43,
+          "y": 260.72
+        },
+        "width": 12.75,
+        "height": 14.86,
+        "rotate": 0,
+        "opacity": 1
+      },
+      "seal": {
+        "type": "image",
+        "position": {
+          "x": 108.74,
+          "y": 258.38
+        },
+        "width": 28.62,
+        "height": 20.95,
+        "rotate": 0,
+        "opacity": 1
+      }
+    
   }
 ]
