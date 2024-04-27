@@ -153,7 +153,7 @@ const InvoiceForm = ({ generatePDF }) => {
         {/* Reported To */}
         <div className="form-group">
           <label htmlFor="reportedTo">Reported To:</label>
-          <input type="text" className="form-control" id="reportedTo" name="reportedTo" value={formData.reportedTo} onChange={handleInputChange} required />
+          <textarea type="text" className="form-control" id="reportedTo" name="reportedTo" value={formData.reportedTo} onChange={handleInputChange} required />
         </div>
 
         {/* Hire Charges */}

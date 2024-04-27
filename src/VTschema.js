@@ -95,16 +95,16 @@ export const VTschema =
     "reportedTo": {
       "type": "text",
       "position": {
-        "x": 89,
-        "y": 106.4
+        "x": 86.52,
+        "y": 81.08
       },
-      "width": 104.8,
-      "height": 12.65,
+      "width": 108.24,
+      "height": 18.45,
       "rotate": 0,
-      "alignment": "center",
-      "verticalAlignment": "top",
-      "fontSize": 11,
-      "lineHeight": 1,
+      "alignment": "left",
+      "verticalAlignment": "bottom",
+      "fontSize": 10,
+      "lineHeight": 1.8,
       "characterSpacing": 0,
       "fontColor": "#000E8A",
       "backgroundColor": "",
