@@ -102,7 +102,7 @@ export const VTschema =
       "height": 18.45,
       "rotate": 0,
       "alignment": "left",
-      "verticalAlignment": "bottom",
+      "verticalAlignment": "top",
       "fontSize": 10,
       "lineHeight": 1.8,
       "characterSpacing": 0,
