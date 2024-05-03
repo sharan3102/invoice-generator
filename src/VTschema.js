@@ -95,11 +95,11 @@ export const VTschema =
     "reportedTo": {
       "type": "text",
       "position": {
-        "x": 86.52,
-        "y": 81.08
+        "x": 89,
+        "y": 80
       },
-      "width": 108.24,
-      "height": 18.45,
+      "width": 104.8,
+      "height": 12.65,
       "rotate": 0,
       "alignment": "left",
       "verticalAlignment": "top",
@@ -115,7 +115,7 @@ export const VTschema =
       "type": "text",
       "position": {
         "x": 90.06,
-        "y": 82.06
+        "y": 106
       },
       "width": 103.47,
       "height": 12.65,
