@@ -91,45 +91,82 @@ export const VTschema =
       "opacity": 1,
       "fontName": "Roboto"
     },
-    
-    "reportedTo": {
+    "arrangedBy": {
       "type": "text",
       "position": {
-        "x": 89,
-        "y": 80
+        "x": 87.84,
+        "y": 80.96
       },
-      "width": 104.8,
-      "height": 12.65,
+      "width": 107.44,
+      "height": 18.99,
       "rotate": 0,
       "alignment": "left",
       "verticalAlignment": "top",
       "fontSize": 10,
-      "lineHeight": 1.8,
+      "lineHeight": 1.6,
       "characterSpacing": 0,
       "fontColor": "#000E8A",
       "backgroundColor": "",
       "opacity": 1,
       "fontName": "Roboto"
     },
-    "arrangedBy": {
+    "reportedTo": {
       "type": "text",
       "position": {
-        "x": 90.06,
-        "y": 106
+        "x": 87.31,
+        "y": 105.83
       },
-      "width": 103.47,
-      "height": 12.65,
+      "width": 107.97,
+      "height": 15.55,
       "rotate": 0,
-      "alignment": "center",
+      "alignment": "left",
       "verticalAlignment": "top",
-      "fontSize": 11,
-      "lineHeight": 1,
+      "fontSize": 10,
+      "lineHeight": 1.6,
       "characterSpacing": 0,
       "fontColor": "#000E8A",
       "backgroundColor": "",
       "opacity": 1,
       "fontName": "Roboto"
     },
+    // "reportedTo": {
+    //   "type": "text",
+    //   "position": {
+    //     "x": 89,
+    //     "y": 80
+    //   },
+    //   "width": 104.8,
+    //   "height": 12.65,
+    //   "rotate": 0,
+    //   "alignment": "left",
+    //   "verticalAlignment": "top",
+    //   "fontSize": 10,
+    //   "lineHeight": 1.8,
+    //   "characterSpacing": 0,
+    //   "fontColor": "#000E8A",
+    //   "backgroundColor": "",
+    //   "opacity": 1,
+    //   "fontName": "Roboto"
+    // },
+    // "arrangedBy": {
+    //   "type": "text",
+    //   "position": {
+    //     "x": 90.06,
+    //     "y": 106
+    //   },
+    //   "width": 103.47,
+    //   "height": 12.65,
+    //   "rotate": 0,
+    //   "alignment": "center",
+    //   "verticalAlignment": "top",
+    //   "fontSize": 11,
+    //   "lineHeight": 1,
+    //   "characterSpacing": 0,
+    //   "fontColor": "#000E8A",
+    //   "backgroundColor": "",
+    //   "opacity": 1,
+    //   "fontName": "Roboto"
+    // },
     "particularsOfDuty": {
       "type": "text",
       "position": {

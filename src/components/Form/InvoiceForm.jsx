@@ -147,7 +147,7 @@ const InvoiceForm = ({ generatePDF }) => {
         {/* Arranged By */}
         <div className="form-group">
           <label htmlFor="arrangedBy">Arranged By:</label>
-          <input type="text" className="form-control" id="arrangedBy" name="arrangedBy" value={formData.arrangedBy} onChange={handleInputChange} required />
+          <textarea type="text" className="form-control" id="arrangedBy" name="arrangedBy" value={formData.arrangedBy} onChange={handleInputChange} required />
         </div>
 
         {/* Reported To */}
