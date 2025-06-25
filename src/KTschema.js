@@ -12,7 +12,7 @@ export const KTschema =
       "fontSize": 10,
       "fontName": "Roboto",
       "verticalAlignment": "middle",
-      "fontColor": "#000E8A"
+      "fontColor": "#f7323b"
     },
     "formattedDate": {
       "type": "text",
